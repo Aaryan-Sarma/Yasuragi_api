@@ -1,4 +1,5 @@
 # api.py
+app.run(host="0.0.0.0", port=5000)
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
