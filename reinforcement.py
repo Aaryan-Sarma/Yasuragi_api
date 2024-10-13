@@ -6,8 +6,8 @@ import random
 import pickle  # Assuming you use pickle to save/load your model
 
 # Load the pre-trained schedule model
-with open('schedule_model.pkl', 'rb') as f:
-    schedule_model = pickle.load(f)
+'''with open('schedule_model.pkl', 'rb') as f:
+    schedule_model = pickle.load(f)'''
 
 # Define activity categories
 study_activities = [
