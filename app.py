@@ -35,7 +35,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load your trained model
-model = joblib.load('schedule_model.pkl')
+model = joblib.load('q_table.pkl')
 
 @app.route('/')
 def index():
