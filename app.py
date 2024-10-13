@@ -91,6 +91,7 @@ def generate_schedule():
     in_out_activities = data.get('in_out_activities')
     break_during_work = data.get('break_during_work')
     self_care = data.get('self_care')
+    user_schedule = {'22:55 - 06:10': 'Sleep/Rest', '06:10 - 06:46': 'Household Chores', '06:46 - 07:44': 'Meals', '07:44 - 13:20': 'Household Chores', '13:20 - 13:58': 'Meals', '13:58 - 14:40': 'Household Chores', '14:40 - 16:10': 'Flexible Time', '16:10 - 16:52': 'Household Chores', '16:52 - 17:49': 'Leisure/Hobbies', '17:49 - 20:13': 'Household Chores', '20:13 - 20:38': 'Meals', '20:38 - 22:55': 'Flexible Time'}
 
     # Create a DataFrame or suitable structure for prediction if your model requires it
     input_data = pd.DataFrame({
@@ -128,7 +129,8 @@ def generate_schedule():
         'activity_pref': [activity_pref],
         'in_out_activities': [in_out_activities],
         'break_during_work': [break_during_work],
-        'self_care': [self_care]
+        'self_care': [self_care],
+        'user_schedule': [user_schedule]
     })
 
     # Predict schedule using your model
